@@ -953,14 +953,8 @@ export default function InuBrickGame() {
 
                   <div className="flex gap-3">
                     <button
-                      onClick={handleRestartToNameScreen}
-                      className="px-5 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl flex items-center gap-2 shadow-lg shadow-sky-600/30 transition cursor-pointer"
-                    >
-                      <RotateCcw className="w-4 h-4" /> 다시 시작
-                    </button>
-                    <button
                       onClick={() => setGameState("intro")}
-                      className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl flex items-center gap-2 transition cursor-pointer"
+                      className="px-6 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl flex items-center gap-2 shadow-lg shadow-sky-600/30 transition cursor-pointer"
                     >
                       <LogOut className="w-4 h-4" /> 게임 종료
                     </button>
@@ -983,14 +977,8 @@ export default function InuBrickGame() {
 
                   <div className="flex gap-3">
                     <button
-                      onClick={handleRestartToNameScreen}
-                      className="px-5 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl flex items-center gap-2 shadow-lg shadow-sky-600/30 transition cursor-pointer"
-                    >
-                      <RotateCcw className="w-4 h-4" /> 다시 시작
-                    </button>
-                    <button
                       onClick={() => setGameState("intro")}
-                      className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl flex items-center gap-2 transition cursor-pointer"
+                      className="px-6 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-xl flex items-center gap-2 shadow-lg shadow-sky-600/30 transition cursor-pointer"
                     >
                       <LogOut className="w-4 h-4" /> 게임 종료
                     </button>
@@ -999,7 +987,7 @@ export default function InuBrickGame() {
               )}
             </div>
 
-            {/* 하단 제어 버튼 바 (중간 멈춤, 다시 시작, 게임 종료) */}
+            {/* 하단 제어 버튼 바 (중간 멈춤, 게임 종료) */}
             <div className="w-full max-w-[800px] mt-2 sm:mt-4 flex items-center justify-center gap-2 sm:gap-3">
               {(gameState === "playing" || gameState === "paused") && (
                 <button
@@ -1017,13 +1005,6 @@ export default function InuBrickGame() {
                   )}
                 </button>
               )}
-
-              <button
-                onClick={handleRestartToNameScreen}
-                className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium rounded-xl flex items-center gap-1.5 border border-slate-700 transition cursor-pointer"
-              >
-                <RotateCcw className="w-4 h-4" /> 다시 시작
-              </button>
 
               <button
                 onClick={() => setGameState("intro")}
